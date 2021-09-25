@@ -1,34 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Fastcampas Site
 
-## Getting Started
+이 프로젝트는 [조은의 프론트엔드 실무가이드 : 요구사항 분석과 적정 기술] 강의를 들으면서 제작되었습니다.
 
-First, run the development server:
+## Contributor
 
-```bash
-npm run dev
-# or
-yarn dev
+- @techhtml(조은)
+
+## Tech Requirement (Tech Stack)
+
+- Create-next-app
+- Next.js
+- Typescript
+- ESLint
+- Babel 설정 (IE11을 지원하기 위한 선택 사항(기본적으로 지원하긴 하지만 빌드 시 결과물이 달라짐))
+
+## Docker
+
+- Dockerfile을 이용하여 Docker Container
+- Docker Compose를 사용하고 있습니다.
+
+## Script
+
+```
+$ npm run build
+$ npm run deploy
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 테스트
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- jest
+- npm run test
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 프로젝트 구성
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Fast Campas
 
-## Learn More
+**인증**
 
-To learn more about Next.js, take a look at the following resources:
+- 로그인
+- 회원가입
+- 로그아웃
+- Profile
+- 유저 정보
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**글로벌 모듈**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- GNB
+- 레이어
+- 푸터
 
-## Deploy on Vercel
+**내부 모듈**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 배너
+- 공지사항
+- 강의 목록
+- 강의 상세
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**모바일 모듈**
+
+- 카테고리 목록
